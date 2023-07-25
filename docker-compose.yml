@@ -12,9 +12,6 @@ services:
       - microservices
     depends_on:
       - eureka-server
-    deploy:
-      mode: replicated
-      replicas: 3
   recommendations:
     image: jgavirias13/recommendationsapp:v1
     depends_on:
